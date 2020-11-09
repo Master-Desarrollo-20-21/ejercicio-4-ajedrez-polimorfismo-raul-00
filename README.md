@@ -1,3 +1,6 @@
+## Domain Model
+![Alt text](domain-model.png?raw=true "Domain Model")
+
 # ProgramacionOO-Ejercicio4-polimorfismo
 Ejercicio de Programación Orientada a Objetos para practicar polimorfismo
 
