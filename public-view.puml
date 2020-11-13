@@ -8,7 +8,7 @@ Game *--> Board
 Game *--> "2" Player
 
 Board *--> "8x8" Coordinate
-Board *--> "22" Piece
+Board *--> "2..22" Piece
 Board ..> Console
 
 Player o--> Color
