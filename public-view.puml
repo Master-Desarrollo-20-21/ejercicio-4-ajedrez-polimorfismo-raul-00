@@ -11,13 +11,13 @@ Board *--> "8x8" Coordinate
 Board *--> "22" Piece
 Board ..> Console
 
-Player *--> Color
-Player *--> Board
+Player o--> Color
+Player o--> Board
 Player ..> Coordinate
 Player ..> Console
 
 Piece *--> Color
-Piece *--> Coordinate
+Piece o--> Coordinate
 
 Piece  <|-- Pawn
 Piece  <|-- Knigth
