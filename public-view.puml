@@ -38,6 +38,11 @@ class Board{
     +hasKing()
 }
 
+class Player{
+    +move()
+    +isWinner()
+}
+
 class Coordinate{
     +equals(Coordinate)
     +equalRow(Coordinate)
