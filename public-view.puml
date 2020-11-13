@@ -1,0 +1,78 @@
+@startuml
+
+title Chess - Public View
+
+Chess *--> Game
+
+Game *--> Board
+Game *--> "2" Player
+
+Board *--> "8x8" Coordinate
+Board *--> "22" Piece
+Board ..> Console
+
+Player *--> Color
+Player *--> Board
+Player ..> Coordinate
+Player ..> Console
+
+Piece *--> Color
+Piece *--> Coordinate
+
+Piece  <|-- Pawn
+Piece  <|-- Knigth
+Piece  <|-- King
+
+class Chess{
+    {main}
+}
+
+class Game{
+    +play()
+}
+
+class Board{
+    +show()
+    +isValidMovement()
+    +move()
+    +hasKing()
+}
+
+class Coordinate{
+    +equals(Coordinate)
+    +equalRow(Coordinate)
+    +distance(Coordiante)
+    +columDistance(Coordinate)
+    +rowDistance(Coordinate)
+    +read(String title)
+    +behind(Coordinate)
+    +getRow()
+    +getColumn()
+}
+
+abstract class Piece{
+    +hasCoordinate(Coordinate)
+    +equalsColor(Piece)
+    +hasColor(Color)
+    +setMoved()
+    +setCoordinate(Coordinate)
+    +isKing()
+    +isValidMovement(Coordinate origin, Coordinate target)
+    +getPrintable()
+    +getCoordinatesBetween(Coordinate origin, Coordinate target)
+}
+
+
+enum Color{
+    WHITE
+    BLACK
+}
+
+class Console{
+    +intString()
+    +inInt()
+    +out(Char)
+    +out(String)
+    +outln(String)
+}
+@enduml
