@@ -1,8 +1,8 @@
-## Domain Model
-![Alt text](domain-model.png?raw=true "Domain Model")
-
 ## Public view
 ![Alt text](public-view.png?raw=true "Public view")
+
+## Domain Model
+![Alt text](domain-model.png?raw=true "Domain Model")
 
 # ProgramacionOO-Ejercicio4-polimorfismo
 Ejercicio de Programación Orientada a Objetos para practicar polimorfismo
