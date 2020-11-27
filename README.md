@@ -1,8 +1,28 @@
-## Public view
-![Alt text](public-view.png?raw=true "Public view")
+# Propuesta de grupo: "Los primeros"
+* Raúl Castillo
+* Victor Hugo Vallejos
+* Agustín Cisneros
+* Alejandro De Diego
+* Luis Escobar
+* Xavi Gómez
+* Jesus Enrique Cabeza Acero
+* Alberto Dominguez Martín
+* Leonardo Hakim
 
 ## Domain Model
-![Alt text](domain-model.png?raw=true "Domain Model")
+![Alt text](diagrams/domain-model-los-primeros.png?raw=true "Domain Model")
+
+---
+
+# Propuesta propia
+
+## Public view
+![Alt text](diagrams/public-view.png?raw=true "Public view")
+
+## Domain Model
+![Alt text](diagrams/domain-model.png?raw=true "Domain Model")
+
+---
 
 # ProgramacionOO-Ejercicio4-polimorfismo
 Ejercicio de Programación Orientada a Objetos para practicar polimorfismo

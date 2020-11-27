@@ -1,0 +1,48 @@
+@startuml
+
+title Chess - Domain Model
+
+
+Chess *--> Turn
+Chess *--> Board
+
+Turn *-down-> "2" Player
+
+Board *--> "8x8" Square
+
+Player *--> Color
+Player *--> "8" Pawn
+Player *--> "2" Knight
+Player *--> King
+Player --> Board
+Player *--> Goal
+Player --> Action
+
+Goal ..> CaptureAction
+Goal --> King
+
+Piece <|-- King
+Piece <|-- Pawn
+Piece <|-- Knight
+Piece *--> Color 
+Piece *--> MovementRule
+
+Color <|-- Black
+Color <|-- White
+
+Square *--> Coordinate 
+Square o--> "0..1" Piece 
+
+Action <|-- CaptureAction
+Action <|-- MoveAction
+Action <|-- NotAllowedAction
+Action ..> Piece
+Action ..> "Origin | Target" Square
+Action ..> MovementRule
+
+MovementRule <|-- MovementOfTheKing
+MovementRule <|-- MovementOfThePawn
+MovementRule <|-- MovementOfTheKnight
+
+
+@enduml
